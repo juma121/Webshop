@@ -7,6 +7,114 @@
     <link rel="stylesheet" href="webstyle.css">
 </head>
 <body>
+    <header>
+        <div id="logo">
+            <span > <span id="myshop">myShop</span> 
+            <img src="https://thumbs.dreamstime.com/b/gl%C3%BCckliche-m%C3%BCnze-9617846.jpg" alt="" width="80px" height="80px">
+            </span>
+        </div>
+        <div class="searchbar"> 
+            
+                <input type="text" name="itemname" id="searchname">
+                
+                <button type="button" onclick="search(document.getElementById('searchname').value)" id="submitbutton">Search</button>
+            
+        </div>
+
+        <div class="dropdown">
+            <button id="drop-btn" style="width: 50%;">Nach Kategorie <img src="https://image.freepik.com/freie-ikonen/der-pfeil-nach-unten-dick_318-8335.jpg" alt="" width="12px" height="12px"></button>
+
+            <div class="dropdown-container">
+                <ul>
+                    <li id="elektronik"><a href="#">Elektronik</a></li>
+                    <li id="haushalt"><a href="#">Haushalt</a></li>
+                    <li id="sport"><a href="#">Sport</a></li>
+
+                </ul>
+                
+               
+            </div>
+
+
+        </div>
+
+        <div><img src="https://www.luftbilder.de/wp-content/themes/twentysixteen/images/cart.png" alt="" width="80px" height="80px">
+            <span id="cartcounter"></span>
+            
+        </div>
+        
+        
+
+    </header>
+    
+
+    
+    <div class="itemarea">
+        <div class="item" id="lampe">
+            <img src="https://cdn.lampenwelt.de/image/1800x/pino-eine-klassische-tischleuchte-mit-led-lampe-7610532-31.jpg" alt="" width="200px" height="200px" >
+            <div class="infos">
+                <h2>Lampe</h2>
+                <br>
+                <p><strong>Beschreibung:</strong>  </p>
+                
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam quaerat reiciendis, delectus cum ducimus perspiciatis ratione sequi tempora magni odit, repellendus obcaecati nulla architecto, odio aspernatur laboriosam impedit qui libero!
+                </p>
+                <br>
+                <p><strong> Preis:</strong> 19.99€</p>
+                <button onclick="addToCart('Lampe', '19.99')">Add to cart</button>
+
+            </div>
+        </div>
+
+        <div class="item" id="sofa">
+            <img src="https://cdn1.home24.net/images/media/catalog/product/original/png/s/o/sofa-hudson-ii-3-sitzer-webstoff-anthrazit-3852820.jpg" alt="" width="200px" height="200px" >
+            <div class="infos">
+                <h2>Sofa</h2>
+                <br>
+                <p><strong>Beschreibung:</strong>  </p>
+                
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam quaerat reiciendis, delectus cum ducimus perspiciatis ratione sequi tempora magni odit, repellendus obcaecati nulla architecto, odio aspernatur laboriosam impedit qui libero! asdfasdfasdflkjasdölfjasöldkfjaöslkdfjasödlfjasdöflj
+                </p>
+                <br>
+                <p><strong> Preis:</strong> 499.99€</p>
+                <button onclick="addToCart('Sofa', '499.99')">Add to cart</button>
+
+            </div>
+        </div>
+
+        <div class="item" id="fussball">
+            <img src="https://bilder.bild.de/fotos-skaliert/der-ball-rollt-wieder-zumindest-auf-den-trainingsplaetzen-der-bundesliga-teams--unter-strengen-aufla-201406407-69991428/4,w=1280,c=0.bild.jpg" alt="" width="200px" height="200px" >
+            <div class="infos">
+                <h2>Fußball</h2>
+                <br>
+                <p><strong>Beschreibung:</strong>  </p>
+                
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam quaerat reiciendis, delectus cum ducimus perspiciatis ratione sequi tempora magni odit, repellendus obcaecati nulla architecto, odio aspernatur laboriosam impedit qui libero!
+                </p>
+                <br>
+                <p><strong> Preis:</strong> 49.99€</p>
+                <button onclick="addToCart('Fussball', '49.99')">Add to cart</button>
+
+            </div>
+        </div>
+        
+
+        
+
+        
+
+        
+
+    </div>
+
+    <div class="item-container">
+
+
+    
+
+            
+
+    </div>
     
 
     <script src="webscript.js"></script>

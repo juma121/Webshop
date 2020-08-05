@@ -1,0 +1,140 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+header {
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#myshop{
+    position: relative;
+    bottom: 40px;
+    font-size: xx-large;
+    
+}
+
+.searchbar {
+    width: 50%;
+    border: 1px solid blue;
+    position: relative;
+    
+
+}
+
+#searchname {
+    width: 80%;
+    padding: 2%;
+    transform: translateY(25%);
+    
+    
+}
+
+#submitbutton {
+    width: 19%;
+    transform: translateY(25%);
+    padding: 2%;
+    font-weight: bolder;
+}
+
+.dropdown {
+    width: 20%;
+    border: 1px solid black;
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown button {
+    height: 50%;
+    transform: translateY(50%);
+}
+
+.dropdown button:hover {
+    
+    background-color: ghostwhite;
+}
+
+.dropdown:hover .dropdown-container {
+    display: block;
+}
+
+
+
+.dropdown-container {
+    position: absolute;
+    top: 75%;
+    width: 50%;
+    z-index: 1;
+    display: none;
+    
+    
+}
+
+.dropdown-container ul {
+    list-style: none;
+}
+
+.dropdown-container li {
+    border: 1px solid black;
+    padding: 5px;
+    width: 100%;
+    background-color: azure;
+    box-shadow: 2px 2px rgb(199, 145, 145);
+
+}
+
+.dropdown-container li:hover {
+    background-color: beige;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+
+}
+
+.itemarea {
+    margin: 60px;
+    border: 1px solid black;
+}
+
+.item {
+    border: 1px solid red;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.item img {
+    float: left;
+    object-fit: cover;
+}
+
+.infos {
+    margin: 0px 20px;
+    float: left;
+    border: 1px solid blue;
+    width: 60%;
+}
+
+.infos button {
+    margin-top: 5px;
+    padding: 5px;
+}
+
+#cartcounter {
+    position: relative;
+    bottom: 20px;
+    font-size: 30px;
+    padding: 10px;
+    
+}
+
+
+
+
+
+
+
