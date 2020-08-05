@@ -2,7 +2,10 @@
 
 function search(value){
     
-    if(value == 'lampe'){
+    let lamperegex = /lampe/i;
+    let sofaregex = /sofa/i;
+    let fußballregex = /fußball/i;
+    if(lamperegex.test(value)){
         var x = document.getElementsByClassName("item");
         
         for(let i = 0; i < x.length; i++){
@@ -11,7 +14,7 @@ function search(value){
         document.getElementById("lampe").style.display = "block";
 
         
-    }else if(value == 'sofa'){
+    }else if(sofaregex.test(value)){
         var x = document.getElementsByClassName("item");
         
         for(let i = 0; i < x.length; i++){
@@ -19,7 +22,7 @@ function search(value){
         }
         document.getElementById("sofa").style.display = "block";
 
-    }else if(value == 'fussball'){
+    }else if(fußballregex.test(value)){
         var x = document.getElementsByClassName("item");
         
         for(let i = 0; i < x.length; i++){

@@ -19,7 +19,7 @@ header {
 
 .searchbar {
     width: 50%;
-    border: 1px solid blue;
+    
     position: relative;
     
 
@@ -42,7 +42,7 @@ header {
 
 .dropdown {
     width: 20%;
-    border: 1px solid black;
+    
     position: relative;
     display: inline-block;
 }
@@ -98,11 +98,10 @@ a {
 
 .itemarea {
     margin: 60px;
-    border: 1px solid black;
 }
 
 .item {
-    border: 1px solid red;
+    border: 1px solid black;
     overflow: hidden;
     margin-bottom: 20px;
 }
@@ -115,7 +114,7 @@ a {
 .infos {
     margin: 0px 20px;
     float: left;
-    border: 1px solid blue;
+    
     width: 60%;
 }
 
