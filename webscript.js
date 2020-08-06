@@ -36,8 +36,9 @@ const elektronik = document.getElementById("elektronik");
 const haushalt = document.getElementById("haushalt");
 const sport = document.getElementById("sport");
 const logo = document.getElementById("logo");
+const carticon = document.getElementById("carticon");
 
-var itemscounter = 0;
+let itemscounter = 0;
 
 elektronik.addEventListener("click", () => {
     var x = document.getElementsByClassName("item");
@@ -70,6 +71,10 @@ logo.addEventListener("click", () => {
     document.location = "file:///C:/Users/jumal/OneDrive/Desktop/Webshop/webshop.html";
 })
 
+carticon.addEventListener("click", () => {
+    document.location = "file:///C:/Users/jumal/OneDrive/Desktop/Webshop/shoppingcart.html";
+})
+
 function addToCart(product, price){
     itemscounter += 1;
     localStorage.setItem(product, price);
@@ -82,16 +87,7 @@ function updateCart(){
 
 }
 
-function createCartList(){
-    for(let value in localStorage){
-        var tag = document.createElement("p");
-        var text = document.createTextNode(localStorage.getItem(value));
-        tag.appendChild(text);
-        var container = document.getElementById("itemlist");
-        container.appendChild(tag);
-    }
-    
-}
+
 
 
 
